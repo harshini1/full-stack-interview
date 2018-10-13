@@ -97,6 +97,8 @@ The Controller takes the huge responsibility of maintaining both the application
 While an architecture may be partly responsible for scaling related limitations, it is not the only factor. There are many web applications that are developed using the MVC architecture and are proven to be scalable to meet customer demands.
 Having said that, information is the most challenging aspect of a software when it comes to scaling. Redux tackles information scaling well, as it puts information first and foremost, above everything else.
 
+See [redux-vs-mvc](https://blog.gisspan.com/2017/02/Redux-Vs-MVC,-Why-and-How.html)
+
 **Flux vs Redux**
 
 **Flux:** 
@@ -114,6 +116,8 @@ Having said that, information is the most challenging aspect of a software when 
 - No dispatcher
 - Container components utilize connect
 - State is immutable
+
+See [redux-vs-flux](https://www.educba.com/redux-vs-flux/)
 
 </details>
 
