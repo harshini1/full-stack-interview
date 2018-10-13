@@ -196,7 +196,197 @@ var moreThanOneDimension = new int[3,2] { {1, 11}, {2, 21}, {3, 31}}
         Answer
     </summary>
 
-
 Jagged array is an array whose elements are arrays. Array of arrays.
+
+</details>
+
+### 15. What is a Delegate? :star::star:
+
+<details>
+    <summary>
+        Answer
+    </summary>
+
+It is a type that represents references to methods with a particular parameter list and return type. When you instantiate a delegate, you can associate its instance with any method with a compatible signature and return type. You can invoke (or call) the method through the delegate instance.
+
+Delegates are used to pass methods as arguments to other methods. 
+
+Types of delegates available:
+* Single Delegate
+* Multicast Delegate
+* Generic Delegate
+  * `Func`
+  * `Action`
+  * `Predicate`
+
+</details>
+
+### 16. What are Events? :star::star:
+
+<details>
+    <summary>
+        Answer
+    </summary>
+
+An event is a message sent by an object to signal the occurrence of an action. 
+A class that raises an event is called a publisher and a class which responds/receives the event is called a subscriber. An Event should have at least one subscriber else that event is never raised.
+
+Delegates are used to declare Events.
+
+</details>
+
+### 17. What is Reflection? :star::star:
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    
+Reflection provides objects (of type `Type`) that describe assemblies, modules and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. If you are using attributes in your code, reflection enables you to access them.
+
+</details>
+
+### 18. What is a Generic Class? :star::star:
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    
+Generic classes encapsulate operations that are not specific to a particular data type. The most common use for generic classes is with collections like linked lists, hash tables, stacks, queues, trees, and so on. Operations such as adding and removing items from the collection are performed in basically the same way regardless of the type of data being stored.
+
+</details>
+
+### 19. What is the difference between “out” and “ref” parameters
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    
+`ref` parameters are for the data that is both input and output of a method - it indicates that the data can be modified by the method call. When using `ref` the variable passed must be initialized.
+
+`out` parameters are for the data that is an output only of the method - caller doesn't need to initialized this variable as it's to be handled by the method.
+
+</details>
+
+### 20. Can we use “this” inside a static method?
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    
+No, because there is no instance that `this` would refer to.
+
+</details>
+
+### 21. What is the difference between “StringBuilder” and “String” in C#?
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    
+`StringBuilder` is mutable, which means once object for `StringBuilder` is created, it later be modified either using `Append`, `Remove` or `Replace`.
+`String` is immutable and it means we cannot modify the string object and will always create new object in memory of `string` type.
+
+</details>
+
+### 22. What is Nullable Types
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    
+Value types that also can hold a null values (simiar to reference types.)
+
+```cs
+int? nullableInt = null
+```
+
+</details>
+
+### 23. What is the difference between `as` and `is` operators
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    
+`as` is used for casting objects.
+`is` is used for checking if object is of a type and returns a `bool` value
+
+</details>
+
+### 24. What loop types are available in C#?
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    
+`for`, `while`, `do...while`
+
+</details>
+
+### 25. What are Attributes?
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    
+Method of associating metadata, or declarative information, with code (assemblies, types, methods, properties, and so forth). After an attribute is associated with a program entity, the attribute can be queried at run time by using __reflection__.
+
+</details>
+
+### 26. Access modifiers in C#?
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    
+`public` – can be accessed from any code in the project.
+`private` - can be accessed by any code within the containing class only. If an attribute or class is defined without access modifiers, it's default access modifier will be `private`.
+`protected` - can be accessed by any method in the inherited classes and any method within the same class. Cannot be applied to `classes` and `interfaces`. Methods and fields in a `interface` can't be declared `protected`.
+`internal` – access is restricted to classes within the current project assembly.
+`protected internal` – access is restricted to classes within the current project assembly and types derived from the containing class. 
+
+</details>
+
+### 27. What is method overloading?
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    
+When method is created with the same name but different signature (different set of parameters). Constructors, methods, functions and operators can be overloaded.
+
+</details>
+
+### 28. What is method overriding?
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    
+It's providing new implementation for the method in a derived class that will be used instead of the method from the base class.
+
+</details>
+
+### 29. Examples of Polymorphism in C#?
+
+<details>
+    <summary>
+        Answer
+    </summary>
+    
+**Compile time** polymorphism: Overloading
+**Runtime** polymorphism: Overriding
 
 </details>
